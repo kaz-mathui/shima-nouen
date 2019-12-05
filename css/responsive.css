@@ -1,0 +1,534 @@
+/* トップページ */
+/* PCサイズ中の場合は以下を適用する:1180px以下 */
+
+@media all and (max-width: 1180px) {
+    .container{
+        width: 880px;
+    }
+
+    .commit-content{
+        margin: 0 auto;
+    }
+
+    .Ivy-image{
+        display: none;
+    }
+
+    .commit-line-right{
+        margin-left: 0;
+    }
+
+    .commit{
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+    }
+    
+    .commit-content{
+        justify-content: center;
+    }
+
+    .commit-content{
+        width: 500px;
+    }
+
+    .commit-message {
+        width: 100%;
+        height: 100%;
+        
+    }
+
+    .commit-rgiht{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .commit-image{
+        padding-bottom: 30px;
+    }
+
+    .commit-image-right{
+        padding-right: 0;
+    }
+
+    .stores{
+        flex-wrap: wrap;
+    }
+
+    .store{
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+
+    .blogs{
+        flex-wrap: wrap;
+        padding-bottom: 0;
+    }
+
+    .blog-card-index{
+        width: 70%;
+        margin: 0 auto;
+        margin-bottom: 80px;
+    }
+    .blog-card{
+        width: 70%;
+        margin: 0 auto;
+        margin-bottom: 80px;
+    }
+
+    .seasons{
+        flex-direction: column;
+        width: 328px;
+        margin: 0 auto;
+        padding: 27px 60px;
+    }
+
+    .season{
+        margin: 0 auto;
+    }
+
+    .season p{
+        padding-bottom: 10px;
+    }
+
+    .season-right{
+        transform: rotate(90deg);
+        width: 50px;
+        /* height: 60px; */
+        padding-top: 0;
+        margin: 0 auto;
+    }
+
+    /* .gallery-image{
+        margin: 0 auto;
+        margin-bottom: 75px;
+    } */
+
+    .gallery-image{
+        width: 230px;
+        height: 230px;
+        object-fit: cover; 
+        margin-bottom: 27px;
+    }
+
+    /* ==============================================================
+    about(当園について)
+    ============================================================   */
+
+    .about-content{
+        flex-wrap: wrap;
+    }
+
+    .about-content img{
+        margin: 0 auto; 
+        padding-right: 0;
+    }
+
+    .about-message{
+        margin: 0 auto; 
+        text-align: center;
+        margin-top: 60px;
+    }
+
+
+
+}
+
+
+
+
+/* トップページ */
+/* タブレットの場合は以下を適用する:880px以下 */
+
+@media all and (max-width: 880px) {
+    .container{
+        width: 680px;
+    }
+
+    .gallery-image{
+        width: 110px;
+        height: 110px;
+        object-fit: cover; 
+        margin-bottom: 7px;
+    }
+
+    .galleries{
+        padding:0 0;
+        width: 340px;
+        margin: 0 auto;
+    }
+
+    .footer-navi{
+        flex-wrap: wrap;
+    }
+    .footer-navi p{
+        width: 100%;
+        padding-bottom: 12px;
+    }
+    .footer-navi-p{
+        border:none;
+    }
+    .nav-img-footer{
+        width: 90px;
+        height: 100px;
+        margin-right: 20px;
+    }
+
+    .blog-card{
+        width: 100%;
+    }
+
+    .blog-card .blog-title{
+        font-size: 18px;
+        width: 90%;
+        padding-bottom: 23px;
+    }
+    .blog-card .blog-date{
+        font-size: 14px;
+    }
+
+    
+}
+
+/* トップページ */
+/* タブレットサイズ小の場合は以下を適用する:680px以下 */
+
+@media all and (max-width: 680px) {
+    .container{
+        width: 90%;
+    }
+
+    .heading{
+        padding-top: 60px;
+    }
+
+    .top{     
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 423px;
+    } 
+
+    /* .top{
+        display: none;
+    } */
+
+    .top-bkimage-resposive{
+        width: 60px;
+        height: 60px;
+    }
+
+    /* .top-bkimage-resposive img{
+        width: 680px;
+    } */
+
+    .top-message{
+        display: none;
+    }
+
+    .top-message-resposive{
+        display: block;
+        margin:0 auto ;
+        /* text-align: center; */
+        /* padding-top: 40px; */
+        width: 150px;
+        font-size: 18px;
+    }
+
+    .top-message-resposive h1{
+        color: #295525;
+        font-size: 16px;
+        /* margin-left: 25px; */
+        /* background-color: rgb(255, 255, 255, 0.8); */
+        /* display: inline-block; */
+        /* letter-spacing: 5px; */
+        letter-spacing: 0px;
+        line-height: 31px;
+    }
+
+    header{
+        height: 65px;
+    }
+
+    .header-navi{
+        display: none;
+    }
+
+    .header-navi-responsive{
+        display: block;
+        /* line-height: 100px; */
+        /* text-align: right; */
+        /* height: 65px; */
+        display: flex;
+        padding: 3.5px 0;
+        width: 100%;
+    }
+
+    .header-navi-responsive img{
+        width: 50px;
+        height: 56px;
+    }
+
+    .header-navi-responsive p{
+        font-size: 12px;
+        color: #295525;
+        text-align: center;
+        
+    }
+
+    .menu-icon{
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 38px;
+    }
+
+    .commit-icon img{
+        width: 60px;
+        height: 60px;
+        padding: 0;
+        margin-right: 10px;
+        
+    }
+
+    .commit-icon{
+        margin-bottom: 0px;
+    }
+
+    .commit-image img{
+        width: 100%;
+    }
+
+    .commit-title{
+        height: 68px;
+    }
+
+    .commit-title p{
+        font-size: 20px;
+        letter-spacing: 0px;
+        line-height: 34px;
+    }
+
+    .concept-section{
+        text-align: center;
+    }
+
+    .concept-message{
+        width: 272px;
+        margin: 0 auto;
+    }
+
+    .concept-message p{
+        font-size: 16px;
+    }
+
+    .gallery-image{
+        width: 110px;
+        height: 110px;
+        object-fit: cover; 
+        margin-bottom: 7px;
+    }
+
+    .top-about{
+        margin-top: 65px;
+        background-image: url(../level-3-imgheader1.png);
+        background-size: cover;
+    }
+    .top-news{
+        margin-top: 65px;
+        background-image: url(../level-3-imgheader3.png);
+        background-size: cover;
+    }
+    .top-store{
+        margin-top: 65px;
+        background-image: url(../level-3-imgheader2.png);
+        background-size: cover;
+    }
+    .top-contact{
+        margin-top: 65px;
+        background-image: url(../level-3-imgheader4.png);
+        background-size: cover;
+    }
+
+    /* ==============================================================
+    about(当園について)
+    ============================================================   */
+
+    .company-content img{
+        display: none;
+    }
+
+    .company-Introductions{
+        margin: 0 auto;
+    }
+
+    .company-Intro{
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    .company-Intro p{
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+    .company-Intro-item{
+        width: 100%;
+        height: auto;
+    }
+
+    .section-message-Underlayer{
+        padding: 80px 0;
+    }
+
+    .section-message-about-res{
+        display: block;
+        font-size: 18px;
+        line-height: 31px;
+    }
+
+    .section-message-about-pc{
+        display: none;
+    }
+
+    .about-content img{
+        width: 100%;
+    }
+
+    .about-message{
+        width: 90%;
+        font-size: 16px;
+    }
+
+    .blog-tag p{
+        padding: 5px 25px;
+        font-size: 12px;
+    }
+
+    /* ==============================================================
+    contact(お問い合わせ)
+    ============================================================   */
+
+    .contact-forms {
+        width: 100%;
+    }
+
+    .contact-form p{
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .input-area{
+        font-size: 14px;
+        height: 26px;
+        margin-bottom: 20px;
+    }
+
+    .text-area{
+        font-size: 14px;
+        height: 44px;
+    }
+
+    .btn{
+        font-size: 16px;
+        line-height: 50px;
+        width: 220px;
+        height: 50px;
+    }
+
+    .submit{
+        padding: 0;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+@media all and (max-width: 580px){
+
+    .top{
+        height: 350px;
+    }
+
+    .more{
+        text-align:center;
+        padding-bottom: 40px;
+    }
+}
+
+@media all and (max-width: 480px){
+    
+    .top{
+        height: 250px;
+    }
+
+    .top-message-Underlayer{
+        padding: 0;
+        line-height: 56px;
+        font-size: 18px;
+        width: 100%;
+        height: auto;
+        margin-bottom: 30px;
+    }
+}
+
+@media all and (max-width: 420px){
+    
+    .top{
+        height: 250px;
+    }
+
+    .heading-logo{
+        width: 80px;
+        height: 80px;
+    }
+
+    .heading-underbar{
+        width: 200px;
+    }
+
+    .seasons{
+        flex-direction: column;
+        width: 280px;
+        margin: 0 auto;
+        padding: 27px 10px;
+    }
+    .gloabal-footer p{
+        font-size: 14px;
+    }
+    .company-intro-item{
+        width: 100%;
+    }
+
+    
+}
+
+@media all and (max-width: 375px){
+    
+    .top{
+        height: 300px;
+    }
+
+    .galleries{
+        width: 280px;
+        margin: 0 auto;
+    }
+
+    .gallery-image{
+        width: 90px;
+        height: 90px;
+        object-fit: cover; 
+        margin-bottom: 5px;
+    }
+
+    .store{
+        min-width: 280px;
+    }
+
+    
+}
