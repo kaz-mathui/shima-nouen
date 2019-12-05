@@ -1,0 +1,763 @@
+*{
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", YuGothic, sans-serif;
+    /* max-width:1280px; */
+    /* bodyにmax-widthを指定することはあまりやらない */
+  }
+  
+  li {
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+
+  p{
+      color: #333333;
+  }
+
+/* ==============================================================
+トップページと共通箇所のCSS
+コンテナ(全ページ共通)
+ヘッダー(全ページ共通)
+トップ
+コンセプト
+こだわり
+オンラインストア            store(品目・ストア)
+お知らせ                   news(お知らせ)
+季節イベント
+ギャラリー
+グローバルフッター(全ページ共通)
+↓↓↓個別ページ用CSS
+下層トップ
+下層コンテンツ
+about(当園について)
+news(お知らせ)
+store(品目・ストア)
+contact(お問い合わせ)
+============================================================   */
+
+/* コンテナ */
+
+.container{
+    max-width:1080px;
+    width: 100%;
+    height:100%;
+    margin: 0 auto;
+}
+
+/* ヘッダー */
+
+header{
+    width: 100%;
+    height:100px;
+    background-color:white;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 10;
+}
+
+.header-navi-responsive{
+    display: none;
+}
+
+.flex{
+    display: flex;
+    
+}
+
+nav{
+    justify-content: space-between;
+}
+
+.nav-menu{
+    padding-top: 37px;
+    text-align: center;
+}
+
+.nav-jp{
+    font-size: 18px;
+    padding-bottom: 10px;
+    font-weight: bold;
+    color: #333333;
+    display: block;
+}
+.nav-en{
+    font-size: 14px;
+    color: #295525;
+    font-weight: bold;
+    display: block;
+}
+
+.nav-logo{
+    padding-top: 6px;
+    padding-left:25px;
+}
+
+.nav-img{
+    width: 80px;
+}
+
+/* トップ */
+.top{
+    background-image: url(../level-3-img/top-img/mv.jpg);
+    width: 100%;
+    height: 925px;
+    background-size: cover;
+}
+
+.top-message{
+    position: relative;
+    top: 225px;
+    /* left: 990px; */
+    margin-right: 0;
+    margin-left: auto;
+    writing-mode: vertical-rl;
+}
+
+.top-message-resposive{
+    display: none;
+}
+
+.top-message h1{
+    color: #295525;
+    font-size: 32px;
+    padding:30px 24px;
+    margin-left: 25px;
+    background-color: rgb(255, 255, 255, 0.8);
+    display: inline-block;
+    letter-spacing: 14px;
+}
+
+
+/* こだわり */
+
+.section-message{
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    margin: 40px 0 70px 0;
+}
+
+.underbar{
+    background: linear-gradient(transparent 50%, yellow 20%);
+    display: inline-block;
+}
+
+.heading{
+    text-align: center;
+    padding-top: 100px;
+}
+
+.heading p{
+    font-size: 36px;
+    font-weight: bold;
+    margin: 40px 0 25px 0;
+}
+
+.heading-logo{
+    width: 130px;
+    height: 130px;
+}
+
+.concept-message{
+    text-align: center;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 65px;
+    padding-top: 70px;
+    padding-bottom: 40px;
+}
+
+.section-end-yellow img{
+    margin-bottom: -10px;
+    width: 100%;
+    /* transform:rotate(180deg);
+    background-color: #FFFDF6; */
+}
+
+.section-end-white img{
+    margin-bottom: -10px;
+    width: 100%;
+}
+
+.commit-section{
+    background-color: #FFFDF6;
+}
+
+
+/* commit-groupe-left 左寄せのもの */
+
+.commit-groupe-left{
+    padding-bottom: 60px;
+}
+
+.commit-groupe-right{
+    padding-bottom: 60px;
+}
+
+.commit-line-left{
+    padding-top: 20px;
+    padding-right: 12px;
+}
+
+.commit-line-right{
+    padding-top: 20px;
+    padding-left: 12px;
+    margin-left: auto;
+    margin-right: 0;
+}
+
+.commit-image-right{
+    padding-right: 45px;
+}
+
+.commit-icon{
+    height: 120px;
+    margin-bottom: 36px;
+}
+
+.commit-icon img{
+    padding-right: 25px;
+}
+
+.commit-title{
+    padding-right: 25px;
+    font-weight: bold;
+}
+
+.commit-icon p{
+    font-size: 32px;
+    line-height: 54px;
+}
+
+.commit-message{
+    width: 420px;
+    height: 200px;
+}
+
+.commit-message p{
+    font-size: 18px;
+    line-height: 31px;
+}
+
+/* オンラインストア */
+.stores{
+    justify-content: space-between;
+}
+
+.stores p{
+    font-weight: bold;
+    padding-bottom: 15px;
+}
+
+.set-name{
+    font-size: 22px;
+    font-weight: bold;
+    color: #295525;
+    /* line-height: 37px; */
+    padding-bottom: 30px;
+}
+
+.set-value{
+    font-size: 22px;
+    font-weight: bold;
+    /* line-height: 34px; */
+    padding-bottom: 25px;
+}
+
+.learge-font{
+    font-size: 40px;
+}
+
+.store{
+    min-width: 330px;
+    background-color: #ffffff;
+}
+
+.store-icon img{
+    width: 100%;
+    padding: 15px 15px 28px 15px ;
+}
+
+.stores{
+    margin-bottom: 60px;
+}
+
+.store{
+    text-align: center;
+    width: 30%;
+    /* height: 420px; */
+    box-shadow: 1px 2px 4px gray;
+}
+
+.more{
+    text-align:center;
+    padding-bottom: 40px;
+}
+
+.btn{
+    background-color: #295525;   
+    display: inline-block;
+    border-radius: 90px;
+    padding:0 55px;
+    line-height: 62px;
+    font-size: 22px;
+    color:white;
+}
+
+.instabtn{
+    padding:0 27px;
+}
+
+/* お知らせ */
+
+.blog-section{
+    background-color: #FFFDF6;
+}
+
+.blogs{
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-bottom:70px;
+}
+
+.blog-card-index{
+    top :0;
+    width: 31%;
+    box-shadow: 1px 2px 4px gray;
+}
+
+.blog-image{
+    position: relative;
+}
+
+.blog-image img{
+    width: 100%;
+    padding: 10px 10px 20px 10px;
+}
+
+.blog-image p{
+    position: absolute;
+    top: 10px;
+    right:10px;
+    padding: 4px 17px;
+    background-color: yellow;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.blog-date{
+    color: #295525;
+    font-size: 14px;
+    font-weight: bold;
+    padding-left: 10px;
+    padding-bottom: 15px;
+}
+
+.blog-title{
+    font-size: 18px;
+    font-weight: bold;
+    padding-left: 10px;
+    padding-bottom: 15px;
+}
+
+/* 季節イベント */
+
+.seasons{
+    justify-content: space-between;
+    /* border-style: 5px dashed black; */
+    border: dashed;
+    padding:70px 24px 78px 24px;
+}
+
+.season{
+    text-align: center;
+    width: 202px;
+}
+
+.season-icon{
+    position: relative;
+    padding-bottom: 20px;
+}
+
+/* .season-photo{
+    position: relative;
+} */
+
+.season-image{
+    position: absolute;
+    top: 38px;
+    left: 49px;
+}
+
+.season-name{
+    font-size: 36px;
+    font-weight: bold;
+    color: #295525;
+    padding-bottom: 40px;
+}
+
+.season-event{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.season-right{
+    padding-top: 57px;
+    
+}
+
+
+/* ギャラリー */
+
+.gallery-section{
+    background-color: #FFFDF6;
+}
+
+.galleries{
+    padding:0 65px;
+    margin-top: 70px;
+    margin-bottom: 60px;
+}
+
+.gallery-card{
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.gallery-image{
+    width: 300px;
+    height: 300px;
+    /* width: 30%; */
+    object-fit: cover; 
+    margin-bottom: 27px;
+}
+
+.section-end img{
+    width: 100%;
+}
+
+/* グローバルフッター */
+
+.nav-img-footer{
+    width: 120px;
+}
+
+.gloabal-footer{
+    text-align: center;
+}
+
+.gloabal-footer p{
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 0;
+}
+
+.footer-navi{
+    padding-top: 20px;
+    padding-bottom: 30px;  
+    /* width: 620px; */
+    /* width: 50%; */
+    /* text-align: center; */
+    justify-content: center;
+}
+
+.footer-navi p{
+    padding: 0 33px;
+}
+
+.footer-navi-p{
+    border-left: ridge;
+    border-right: ridge;
+}
+
+/* フッター */
+
+footer{
+    width: 100%;
+    text-align: center;
+    background-color:#295525;
+    height: 50px;
+}
+
+footer p{
+    color: #ffffff;
+    line-height: 50px;
+}
+
+
+/* ==============================================================
+下層共通
+============================================================   */
+
+
+.section-end-Underlayer img{
+    width: 100%;
+}
+
+.section-message-Underlayer{
+    text-align: center;
+    margin-top: 50px;
+    padding: 100px 0;
+    font: Bold 20px/34px YuGothic;
+    letter-spacing: 0;
+    color: #707070;
+    opacity: 1;
+}
+
+.section-message-about-res{
+    display: none;
+    margin-top: 40px;
+    text-align: center;
+    font: Bold 20px/34px YuGothic;
+    letter-spacing: 0;
+    color: #707070;
+    opacity: 1;
+}
+
+.top-about{
+    background-image: url(../img/top-about.png);
+    margin-top: 100px;
+    width: 100%;
+    text-align: center;
+}
+
+.top-message-Underlayer img{
+    margin-top: 20px;
+}
+.top-message-Underlayer{
+    text-align: center;
+    margin-top: 40px;
+}
+.top-message-Underlayer h1{
+    margin-top: 40px;
+    margin-bottom: 25px;
+    text-align: center;
+    font: Bold 36px/38px YuGothic;
+    letter-spacing: 0;
+    color: #090803;
+    opacity: 1;
+}
+.header-logo{
+    margin-top: 40px;
+    width: 10%;
+}
+
+.about-content{
+    padding-top: 100px;
+}
+
+.about-content img{
+    padding-right: 34px;
+}
+.about-message{
+    margin-left: 90px;
+    margin-top: 50px;
+}
+
+.about-message p{
+    text-align: left;
+    font: Bold 20px/34px YuGothic;
+    letter-spacing: 0;
+    color: #333333;
+    opacity: 1;
+}
+
+.company-content{
+    justify-content: center;
+}
+
+.company-Introductions{
+    justify-content: center;
+}
+
+.company-Intro p{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 22px;
+}
+
+.company-Intro-item{
+    display: flex;
+    justify-content: center;
+    width: 170px;
+}
+
+.company-Intro h2{
+    margin-right: auto;
+    margin-left: 0;
+    margin-bottom: 50px;;
+    color: #333333;
+    font: normal 18px/34px YuGothic;
+}
+.heading-underbar{
+    width: 320px;
+}
+
+
+/* ==============================================================
+news(お知らせ)
+============================================================   */
+
+.top-news{
+    background-image: url(../img/top-news.png);
+    /* position: relative;
+    top: 100px; */
+    margin-top: 100px;
+    height: 220px;
+    width: 100%;
+    /* background-size: contain;
+    background-repeat:no-repeat; */
+    text-align: center;
+}
+
+/* .news-message p{
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+} */
+
+.blogs-Individual{
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-bottom:70px;
+    flex-wrap: wrap;
+}
+
+.blog-card{
+    width: 48%;
+    margin-bottom: 58px;
+    box-shadow: 1px 2px 4px gray;
+}
+
+.blog-card .blog-date{
+    font-size: 21px;
+}
+
+.blog-card .blog-title{
+    font-size: 28px;
+    width: 500px;
+    padding-bottom: 23px;
+}
+
+.blog-tag p{
+    position: absolute;
+    top: 10px;
+    right:10px;
+    padding: 11px 35px;
+    font-size: 18px;
+}
+
+
+/* ==============================================================
+store(品目・ストア)
+============================================================   */
+
+.top-store{
+    background-image: url(../img/top-store.png);
+    /* position: relative;
+    top: 100px; */
+    margin-top: 100px;
+    height: 220px;
+    width: 100%;
+    /* background-size: contain;
+    background-repeat:no-repeat; */
+    text-align: center;
+}
+
+.Vegetables{
+    /* justify-content: space-between; */
+    /* justify-content: flex-end; */
+    flex-wrap: wrap;
+}
+
+.Vegetable{
+    text-align: center;
+    box-shadow: 1px 2px 4px gray;
+    background-color: #ffffff;
+    width: 23%;
+    min-width: 248px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.Vegetable-icon img{
+    padding: 10px 10px 15px 10px;
+}
+
+.Vegetable-name{
+    font-size: 26px;
+    font-weight: bold;
+    padding-bottom: 40px;
+}
+
+
+
+/* ==============================================================
+contact(お問い合わせ)
+============================================================   */
+
+.top-contact{
+    background-image: url(../img/top-contact.png);
+    /* position: relative;
+    top: 100px; */
+    margin-top: 100px;
+    height: 220px;
+    width: 100%;
+    /* background-size: contain;
+    background-repeat:no-repeat; */
+    text-align: center;
+}
+
+.contact-forms{
+    margin:0 auto;
+    width: 500px;
+}
+
+.contact-form p{
+    text-align: left;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.input-area{
+    font-size: 21px;
+    width: 100%;
+    height: 34px;
+    margin-bottom: 30px;
+    border: 1px solid #333333;
+}
+
+.input-round{
+    border-radius: 100px;
+}
+
+.radio{
+    padding-left: 21px;
+}
+
+.radio p{
+    font-size: 21px;
+    font-weight: normal;
+    padding-left: 10px;
+}
+
+.text-area{
+    font-size: 21px;
+    width: 100%;
+    height: 98px;
+    margin-bottom: 60px;
+    border: 1px solid #333333;
+}
+
+.submit{
+    padding: 0 97px;
+}
